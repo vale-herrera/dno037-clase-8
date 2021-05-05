@@ -25,14 +25,24 @@
             </footer>
         </div>
 <script>
-    var mymap = L.map('mapa').setView([35.702795, 139.528888], 2);
+    var mymap = L.map('mapa').setView([35.702778, 139.528889], 6);
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
         maxZoom: 18,
         id: 'mapbox/light-v10',
         tileSize: 512,
         zoomOffset: -1
     }).addTo(mymap);
-    L.marker([33.5427796,9.9672612]).addTo(mymap).bindPopup("<b>Hola</b>. Soy un bindPopup.");
+
+    var icon = L.icon({
+                iconUrl: 'images/marker.gif',
+                iconSize:     [60, 40],
+                iconAnchor:   [30, 20],
+                popupAnchor:  [0, -20]});
+
+    L.marker([35.702778, 139.528889],{icon: icon}).addTo(mymap).bindPopup("<b>¡Hola!</b> Aquí se encuentran los headquarters del Studio Ghibli.");
+    L.marker([35.696233, 139.570431], {icon: icon}).addTo(mymap).bindPopup("Aquí se encuentra el Museo Ghibli, inaugurado el año 2001.");
+
+
 </script>
     </body>
 </html>
