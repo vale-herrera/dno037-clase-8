@@ -17,8 +17,8 @@ body {
 }
 
 body.portada{
-    background:var(--fondo) url('images/portada.jpg') right bottom no-repeat;
-    background-size:auto 100%;
+    background:var(--fondo) url('images/portada-1.jpeg') right bottom no-repeat;
+    background-size:auto 50%;
 }
 
 a {
