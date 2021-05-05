@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 :root{
-    --fondo: #8acdf7;
-    --figura: #3f3b78;
+    --fondo: #faf5d7;
+    --figura: #572a0a;
 }
 
 * {
@@ -17,18 +17,18 @@ body {
 }
 
 body.portada{
-    background:var(--fondo) url('images/portada-1.jpeg') right bottom no-repeat;
-    background-size:auto 50%;
+    background:var(--fondo) url('images/portada.jpeg') right bottom no-repeat;
+    background-size:auto 100%;
 }
 
 a {
     font-weight: bold;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(19, 116, 146, 1);
     text-decoration: none;
 }
 
 a:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(84, 111, 141, 0.75);
 }
 
 :hover{
@@ -187,5 +187,5 @@ main div#mapa{
 }
 
 main canvas#grafico{
-    background:#111;
+    background:#faf5d7;
 }
