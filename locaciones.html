@@ -25,7 +25,7 @@
             </footer>
         </div>
 <script>
-    var mymap = L.map('mapa').setView([35.702778, 139.528889], 10);
+    var mymap = L.map('mapa').setView([34.226028, 135.1675], 6);
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
         maxZoom: 18,
         id: 'mapbox/light-v10',
@@ -42,7 +42,8 @@
     L.marker([35.702778, 139.528889],{icon: icon}).addTo(mymap).bindPopup("<b>¡Hola!</b> Aquí se encuentran los headquarters del Studio Ghibli.");
     L.marker([35.696233, 139.570431], {icon: icon}).addTo(mymap).bindPopup("<b>¡Hola!</b> Aquí se encuentra el Museo Ghibli, inaugurado el año 2001.");
     L.marker([35.716667, 139.75], {icon: icon}).addTo(mymap).bindPopup("<b>Bunkyō, Tokio</b> Aquí es donde nació Hayao Miyazaki, en 1941.");
-    L.marker([35.780618,139.4220433], {icon: icon}).addTo(mymap).bindPopup("<b>Sayama Hills, Prefectura de Saitama.</b> Aquí se encuentra el bosque que inspiró el paisaje de 'Mi vecino Totoro'.");
+    L.marker([35.780618,139.4220433], {icon: icon}).addTo(mymap).bindPopup("<b>Sayama Hills, Prefectura de Saitama.</b> Aquí se encuentra el bosque donde vive Totoro en 'Mi vecino Totoro'.");
+    L.marker([30.371111, 130.665], {icon: icon}).addTo(mymap).bindPopup("<b>Yakushima, Kagoshima</b> En esta isla se encuentra el bosque que aparece en 'La princesa Mononoke'.");
 
 
 
