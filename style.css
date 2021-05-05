@@ -28,7 +28,7 @@ a {
 }
 
 a:hover {
-    color: rgba(84, 111, 141, 0.75);
+    color: rgba(162, 230, 224, 0.75);
 }
 
 :hover{
@@ -57,7 +57,7 @@ nav p, footer p {
 
 .active {
     text-decoration: underline;
-    color: white;
+    color: #a2e6e0;
 }
 
 /* para la página de portada */
