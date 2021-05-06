@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Diseño y nuevos medios, segunda versión remota" />
-        <title>&#127793; EVALUACIÓN Nº2 &#127793;</title>
+        <title>&#127793;EVALUACIÓN Nº2 &#127793;</title>
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
@@ -33,7 +33,7 @@
 
                     var n = new URLSearchParams(window.location.search).get('nro');
                     if (n !== null) {
-                        document.querySelector('section').innerHTML = '<h1>' + peliculas[n].name + '</h1><h4>' + peliculas[n].director + ' (' + peliculas[n].year + ')</h4><img src="images/' + peliculas[n].pic_lg + '"><p>' + peliculas[n].description + '</p><h3>Trailer</h3><p>Puedes ver algunas escenas de la película en <a href="' + peliculas[n].trailer + '" target="_blank">Youtube</a><p>';
+                        document.querySelector('section').innerHTML = '<h1>' + peliculas[n].name + '</h1><h4>' + peliculas[n].director + ' (' + peliculas[n].year + ')</h4><img src="images/' + peliculas[n].pic_lg + '"><p>' + peliculas[n].description + '</p><h3>Tráiler</h3><p>Puedes ver el tráiler de esta película haciendo clic<a href="' + peliculas[n].trailer + '" target="_blank"> aquí</a>.<p>';
 
                     } else {
                         document.querySelector('section').innerHTML = '<h1>¡Ups! Algo salió mal, pero las motitas de polvo lo repararán. </h1><h4>Mientras tanto, puedes volver a escoger cualquiera de las <a href="peliculas.html">películas</a>.</h4>';
